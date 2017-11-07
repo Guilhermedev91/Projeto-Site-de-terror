@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+        <head>
+            <meta charset="UTF-8"/>
+            <link rel="shortcut icon" href="_imagens/caveira.png" type="image/x-icon"/>
+            <title>Tudo sobre filmes de Terror & Horror</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="_css/bootstrap.css">
+        </head>
+<body id="background">
+    <section>
+        <div>
+            <nav class="navbar-fixed-top navbar bg-inverse navbar-dark borda opacidade">
+                <a href="index.html" class="navbar-brand">
+                <img src="_imagens/contato.png" style="width: 95%; height: auto;" class="d-md-inline-block align-top"/></a>
+                <button class="navbar-toggler hidden-md-up float-sm-right float-xs-right" type="button" data-toggle="collapse" data-target="#menu-sanduiche"></button>  
+            <div class="collapse navbar-toggleable-sm" id="menu-sanduiche">
+                <ul class="nav navbar-nav" style="margin-top: 10px;">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>  
+                    </li>
+                    <li class="nav-item">
+                        <a href="fotos.html" class="nav-link">Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quemsoueu.html" class="nav-link">Quem sou eu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="multimidia.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Multimidia</a>
+                        <div class="dropdown-menu">
+                            <a href="musicas.html" class="dropdown-item">Musicas</a>
+                            <a href="videos.html" class="dropdown-item">Videos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fale-conosco1.html" class="nav-link">Fale conosco</a>
+                    </li>
+                </ul>
+                <form action="" class="form-inline float-md-right float-sm-left float-xs-left">
+                    <input type="text" class="form-control" placeholder="Pesquisa"/>
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            </nav>
+        </div>
+    </section>
+            <div class="container">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                <header class="sexta13">
+                    <h1 class="display-1" style="text-align: center;">Filmes de Terror & Horror</h1>
+                </header>   
+     <section>
+                <h1 class="display-3" style="color: white;">Formulário de Contato</h1>
+                <h2 class="lead" style="color: white;">por Guilherme Fernandes</h2>
+    <div class="col-md-8 col-sm-12 col-xs-12">            
+        <article class="jumbotron1">        
+<form method="post" id="fContato" action="mailto:savalasboy@gmail.com" oninput="calc_total();">
+    <fieldset id="usuario" class="col-md-8 col-sm-6 col-xs-8"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo" required/></p>
+        <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos." required/></p>
+        <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="nome@dominio.com" required/></p>
+     </fieldset>   
+        <fieldset id="sexo"><legend>Sexo:</legend>
+            <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+        </fieldset>
+        <fieldset class="col-md-8 col-sm-6 col-xs-8"><legend>Data de Nascimento:</legend>
+        <label for="cNasc"></label><input type="date" name="tNasc" id="cNasc" required/>
+        </fieldset>
+
+<fieldset id="endereco" class="col-md-8 col-sm-6 col-xs-8"><legend>Endereço do Usuário</legend>
+    <p><label for="cRua"> Logradouro:<input type="text" name="tRua" id="cRua" size="15" maxlength="80" placeholder="Rua, Av., Trav..." required/></label></p>
+    <p><label for="cNumero">Número:<input type="number" name="tNumero" id="cNumero" min="0" max="99999" placeholder="Nº casa" required/></label></p>
+    <p><label for="cEstado">Estado:<select name="tEstado" id="cEstado">
+<optgroup label="Região Sudeste">
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+</optgroup>
+        <optgroup label="Região Sul">
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+    </select></label></p>
+    <p><label for="cCidade">Cidade:<input type="text" name="tCidade" id="cCidade" size="20" maxlength="40" placeholder="Cidade/Municipio" list="cidade"/></label></p>
+    <datalist id="cidade">
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Niterói"></option>
+        <option value="Belford Roxo"></option>
+    </datalist>
+</fieldset>
+
+<fieldset>
+    <legend class="legenda-borda">Mensagem do Usuário</legend>
+    <p><label for="cGrau">Grau de Urgência:</label>
+    Min<input type="range" name="tGrau" id="cGrau" min="0" max="100" step="1"/>Max</p>
+    <p><label for="cMsg">Mensagem:</label>
+    <textarea name="tMsg" id="cMsg" cols="25" rows="5" placeholder="Deixe aqui sua mensagem."></textarea></p>
+</fieldset>
+
+    <button type="submit" class="btn btn-primary">Limpar</button>
+    <button type="clear" class="btn btn-success">Enviar</button>
+</form>
+        </article>
+    </div>    
+    </section>
+    <section>
+        <div class="col-md-4 col-sm-4 col-xs-12" style="color:white;">
+            <h3>Segue o mapa da nossa localização abaixo.</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58515.61225657388!2d-46.690728853824!3d-23.560333728793513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9371b05154fa2b95%3A0x6187fb9a20469948!2sUniversidade+S%C3%A3o+Judas+Tadeu!5e0!3m2!1spt-BR!2sbr!4v1509392793381" width="360" height="350" frameborder="0" style="border:1" allowfullscreen></iframe>
+        </div>
+    </section>
+            <div class="col-md-12 col-sm-12 col-xs-12 bg-inverse borda">
+                <footer style="color: white; text-align: center;">
+    <p>Copyright &copy; 2017 - by Guilherme Fernandes</p>
+    <p><a href="https://www.facebook.com/guilherme.fernandes.7587" target="_blank">Facebook</a> | Twitter</p>
+                </footer>
+            </div>
+        </div>  
+        <script language="JavaScript" src="_javascript/funcoes.js"></script>
+        <script src="_javascript/jquery-3.1.0.js"></script>
+        <script src="_javascript/tether.js"></script>
+        <script src="_javascript/bootstrap.js"></script>
+    </body> 
+</html>
